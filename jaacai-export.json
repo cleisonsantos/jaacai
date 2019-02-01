@@ -33,12 +33,28 @@
     },
     {
       "id": 2,
-      "nome": "Acaí Leite em Pó",
+      "nome": "Acaí Ouro Branco",
+      "ingredientes": [
+        "Creme de Açaí",
+        "2 Bombons picados",
+        "Sorvete",
+        "Cobertura"
+      ],
+      "valores": {
+        "200": 9,
+        "300": 11,
+        "500": 13,
+        "700": 18
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Acaí Leite Condensado",
       "ingredientes": [
         "Creme de Açaí",
         "Banana",
         "Granola",
-        "Leite em pó"
+        "Leite Condensado"
       ],
       "valores": {
         "200": 8,
@@ -46,6 +62,84 @@
         "500": 12,
         "700": 16.5
       }
+    },
+    {
+      "id": 4,
+      "nome": "Acaí Chocolate",
+      "ingredientes": [
+        "Creme de Açaí",
+        "Banana",
+        "Gotas de chocolate",
+        "Cobertura de chocolate"
+      ],
+      "valores": {
+        "200": 9,
+        "300": 11,
+        "500": 13,
+        "700": 18.5
+      }
+    },
+    {
+      "id": 5,
+      "nome": "Acaí Sonho de Valsa",
+      "ingredientes": [
+        "Creme de Açaí",
+        "2 Bombons picados",
+        "Sorvete",
+        "Cobertura"
+      ],
+      "valores": {
+        "200": 9,
+        "300": 11,
+        "500": 13,
+        "700": 18
+      }
+    },
+    {
+      "id": 6,
+      "nome": "Acaí Morango",
+      "ingredientes": [
+        "Creme de Açaí",
+        "Morango",
+        "Granola"
+      ],
+      "valores": {
+        "200": 9,
+        "300": 11,
+        "500": 13,
+        "700": 18
+      }
+    },
+    {
+      "id": 7,
+      "nome": "Acaí Confete",
+      "ingredientes": [
+        "Creme de Açaí",
+        "Banana",
+        "Confete"
+      ],
+      "valores": {
+        "200": 9,
+        "300": 11,
+        "500": 13,
+        "700": 18
+      }
+    },
+    {
+      "id": 8,
+      "nome": "Acaí Frutas",
+      "ingredientes": [
+        "Creme de Açaí",
+        "Kiwi ou manga",
+        "Leite Condensado"
+      ],
+      "valores": {
+        "200": 9,
+        "300": 11,
+        "500": 13,
+        "700": 18
+      }
     }
+
   ]
 }
