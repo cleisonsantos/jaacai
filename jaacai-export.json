@@ -1,0 +1,51 @@
+{
+  "sabores": [
+    {
+      "id": 0,
+      "nome": "Acaí Tradicional",
+      "ingredientes": [
+        "Creme de Açaí",
+        "Banana",
+        "Granola"
+      ],
+      "valores": {
+        "200": 6.5,
+        "300": 8.5,
+        "500": 10.5,
+        "700": 14.5
+      }
+    },
+    {
+      "id": 1,
+      "nome": "Acaí Leite em Pó",
+      "ingredientes": [
+        "Creme de Açaí",
+        "Banana",
+        "Granola",
+        "Leite em pó"
+      ],
+      "valores": {
+        "200": 8,
+        "300": 10,
+        "500": 12,
+        "700": 16.5
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Acaí Leite em Pó",
+      "ingredientes": [
+        "Creme de Açaí",
+        "Banana",
+        "Granola",
+        "Leite em pó"
+      ],
+      "valores": {
+        "200": 8,
+        "300": 10,
+        "500": 12,
+        "700": 16.5
+      }
+    }
+  ]
+}
