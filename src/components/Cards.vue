@@ -1,40 +1,33 @@
 <template>
-<v-hover >
-    <v-card
-      slot-scope="{ hover }"
-      :class="`elevation-${hover ? 12 : 2}`"
-      class="mx-auto"
-      width="344"
-    >
-      <v-img
-        :aspect-ratio="16/9"
-        src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
-      ></v-img>
-      <v-card-title>
-        <div>
-          <span class="headline">Cafe Badilico</span>
-          <div class="d-flex">
-            <v-rating
-              :value="value"
-              color="amber"
-              dense
-              half-increments
-              readonly
-              size="14"
-            ></v-rating>
-            <div class="ml-2 grey--text text--darken-2">
-              <span>{{ value }}</span>
-              <span>({{ reviews }})</span>
-            </div>
-          </div>
-        </div>
-        <v-spacer></v-spacer>
-        <v-btn icon class="mr-0">
-          <v-icon>mdi-chevron-right</v-icon>
-        </v-btn>
-      </v-card-title>
-    </v-card>
-  </v-hover>
+  <div>
+    <v-container v-for="sabor in sabores" :key="sabor.title">
+      <v-card hover>
+        <v-container>
+          <v-img :src="sabor.img" height="200px">
+            <v-container fill-height fluid pa-2>
+              <v-layout fill-height>
+                <v-flex xs12 align-end flexbox>
+                  <span class="headline white--text" v-text="sabor.title"></span>
+                </v-flex>
+              </v-layout>
+            </v-container>
+          </v-img>
+
+          <v-card-actions>
+            <v-btn icon>
+              <v-icon>shopping_basket</v-icon>
+            </v-btn>
+            <v-btn icon>
+              <v-icon>favorite</v-icon>
+            </v-btn>
+            <v-btn icon>
+              <v-icon>share</v-icon>
+            </v-btn>
+          </v-card-actions>
+        </v-container>
+      </v-card>
+    </v-container>
+  </div>
 </template>
 
 <script>
@@ -47,7 +40,7 @@ export default {
   },
   methods: {},
   created() {
-    this.$http.get('sabores.json').then(res => {
+    this.$http.get("sabores.json").then(res => {
       this.sabores = res.data;
       console.log(this.sabores);
     });
